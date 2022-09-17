@@ -2,6 +2,8 @@
 
 For the rest of this tutorial, we will be working with a simple todo list manager that is running in Node.js. If you’re not familiar with Node.js, don’t worry. No real JavaScript experience is needed.
 
+![todo-list-sample.png](https://docs.docker.com/get-started/images/todo-list-sample.png)
+
 ## Build and Run the app’s container image
 
 In order to build the application, we need to use a Dockerfile. A Dockerfile is simply a text-based script of instructions that is used to create a container image. If you’ve created Dockerfiles before, you might see a few flaws in the Dockerfile below. But, don’t worry. We’ll go over them.
