@@ -3,8 +3,6 @@
 For the rest of this tutorial, we will be working with a simple todo list manager that is running in Node.js. If you’re not familiar with Node.js, don’t worry. No real JavaScript experience is needed.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://docs.docker.com/get-started/images/todo-list-sample.png" style="width:50%;">
-  <source media="(prefers-color-scheme: light)" srcset="https://docs.docker.com/get-started/images/todo-list-sample.png" style="width:50%;">
   <img alt="todo-list-sample." src="https://docs.docker.com/get-started/images/todo-list-sample.png" style="width:50%;">
 </picture>
 
