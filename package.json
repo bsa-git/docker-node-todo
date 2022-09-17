@@ -1,5 +1,5 @@
 {
-  "name": "101-app",
+  "name": "docker-node-todo",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
