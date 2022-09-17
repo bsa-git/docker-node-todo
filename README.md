@@ -32,7 +32,7 @@ Now that we have an image, let’s run the application. To do so, we will use th
 ```bash
 docker run -dp 3000:3000 node-todo
 ```
-> Remember the **-d** and **-p** flags? We’re running the new container in “detached” mode (in the background) 
+> Remember the `-d` and **-p** flags? We’re running the new container in “detached” mode (in the background) 
 > and creating a mapping between the host’s port 3000 to the container’s port 3000. 
 > Without the port mapping, we wouldn’t be able to access the application.
 
