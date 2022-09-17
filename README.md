@@ -2,14 +2,20 @@
 
 For the rest of this tutorial, we will be working with a simple todo list manager that is running in Node.js. If you’re not familiar with Node.js, don’t worry. No real JavaScript experience is needed.
 
-<!-- <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/25423296/163456779-a8556205-d0a5-45e2-ac17-42d089e3c3f8.png">
-  <img alt="todo-list-sample" src="https://docs.docker.com/get-started/images/todo-list-sample.png" style="width:50%;">
-</picture> -->
 <img alt="todo-list-sample" src="https://docs.docker.com/get-started/images/todo-list-sample.png" style="width:50%;">
 
-## Build and Run the app’s container image
+## Get the app
+
+Before we can run the application, we need to get the application source code onto our machine. For real projects, you will typically clone the repo. But, for this tutorial, we have created a ZIP file containing the application.
+
+1. Download the App contents from the [getting-started repository.](https://github.com/docker/getting-started/tree/master) You can either pull the entire project or [download it as a zip](https://github.com/docker/getting-started/archive/refs/heads/master.zip) and extract the app folder out to get started with.
+
+2. Once extracted, use your favorite code editor to open the project. If you’re in need of an editor, you can use [Visual Studio Code](https://code.visualstudio.com/). You should see the `package.json` and two subdirectories (`src` and `spec`).
+
+<img alt="todo-list-sample" src="https://docs.docker.com/get-started/images/ide-screenshot.png" style="width:650px;margin-top:20px;">
+
+
+## Build the app’s container image
 
 In order to build the application, we need to use a Dockerfile. A Dockerfile is simply a text-based script of instructions that is used to create a container image. If you’ve created Dockerfiles before, you might see a few flaws in the Dockerfile below. But, don’t worry. We’ll go over them.
 
