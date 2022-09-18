@@ -1,0 +1,14 @@
+site_name: Docker for node-todo
+site_url: https://example.com/
+theme: readthedocs # mkdocs
+nav:
+  - Getting started: tutorial\index.md
+  - Sample application: tutorial\our-application\index.md
+  - Update the application: tutorial\our-application\index.md
+  - Share the application: tutorial\sharing-our-app\index.md
+  - Persist the DB: tutorial\persisting-our-data\index.md
+  - Use bind mounts: tutorial\using-bind-mounts\index.md
+  - Multi-container apps: tutorial\multi-container-apps\index.md
+  - Use Docker Compose: tutorial\using-docker-compose\index.md
+  - Image-building best practices: tutorial\image-building-best-practices\index.md
+  - What next?: tutorial\what-next\index.md
