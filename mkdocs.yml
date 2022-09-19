@@ -1,3 +1,4 @@
+# Commands: mkdocs serve, mkdocs build
 site_name: Docker for node-todo
 site_url: https://example.com/
 theme: readthedocs # mkdocs
