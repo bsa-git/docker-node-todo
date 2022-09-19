@@ -1,15 +1,29 @@
-# Commands: mkdocs serve, mkdocs build
+# Commands: mkdocs new, mkdocs serve, mkdocs build, mkdocs gh-deploy, mkdocs --help
 site_name: Docker for node-todo
 site_url: https://example.com/
-theme: readthedocs # mkdocs
+
+# Configuration
+theme:
+  name: readthedocs
+
+extra_css:
+  - css/styles.css
+  - css/dark-mode.css
+
+# Navigation
 nav:
-  - Getting started: tutorial\index.md
-  - Sample application: tutorial\our-application\index.md
-  - Update the application: tutorial\our-application\index.md
-  - Share the application: tutorial\sharing-our-app\index.md
-  - Persist the DB: tutorial\persisting-our-data\index.md
-  - Use bind mounts: tutorial\using-bind-mounts\index.md
-  - Multi-container apps: tutorial\multi-container-apps\index.md
-  - Use Docker Compose: tutorial\using-docker-compose\index.md
-  - Image-building best practices: tutorial\image-building-best-practices\index.md
-  - What next?: tutorial\what-next\index.md
+  - Home: 
+    - 'Docker overview': 'README.md'
+  - 'Get started':
+    - 'Part1. Getting started': 'tutorial\index.md'
+    - 'Part2. Sample application': 'tutorial\our-application\index.md'
+    - 'Part3. Update the application': 'tutorial\updating-our-app\index.md'
+    - 'Part4. Share the application': 'tutorial\sharing-our-app\index.md'
+    - 'Part5. Persist the DB': 'tutorial\persisting-our-data\index.md'
+    - 'Part6. Use bind mounts': 'tutorial\using-bind-mounts\index.md'
+    - 'Part7. Multi-container apps': 'tutorial\multi-container-apps\index.md'
+    - 'Part8. Use Docker Compose': 'tutorial\using-docker-compose\index.md'
+    - 'Part9. Image-building best practices': 'tutorial\image-building-best-practices\index.md'
+    - 'Part10. What next?': 'tutorial\what-next\index.md'
+  - About:
+    - 'License': 'LICENSE.md'
