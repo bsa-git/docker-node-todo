@@ -8,14 +8,14 @@ theme:
 
 extra_css:
   - css/styles.css
-  - css/dark-mode.css
+  # - css/dark-mode.css
 
 # Navigation
 nav:
   - Home: 
     - 'Docker overview': 'README.md'
   - 'Get started':
-    - 'Part1. Getting started': 'tutorial\index.md'
+    - 'Part1. Getting started': 'tutorial\getting-started\index.md'
     - 'Part2. Sample application': 'tutorial\our-application\index.md'
     - 'Part3. Update the application': 'tutorial\updating-our-app\index.md'
     - 'Part4. Share the application': 'tutorial\sharing-our-app\index.md'

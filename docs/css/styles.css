@@ -44,6 +44,24 @@ h1, h2, h3, h4, .md-footer-nav__inner, .md-header-nav__title, footer.md-footer {
     font-family: Geomanist;
 }
 
+.rst-content pre code {
+    color: #24292f;
+    background-color: #f6f8fa;
+    border: 1px solid #dadddd;
+    border-radius: 6px;
+}
+
+.rst-content code {
+    color: #24292f;
+    background-color: #f6f8fa;
+    border: 1px solid #dadddd;
+    border-radius: 3px;
+}
+
+.hljs-string {
+    color: #27ae60;
+}
+
 .md-header-nav__title {
     line-height: 2.9rem;
 }

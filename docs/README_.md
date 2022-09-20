@@ -17,9 +17,7 @@ Before we can run the application, we need to get the application source code on
 
 ## Build the app’s container image
 
-> In order to build the application, we need to use a Dockerfile. A Dockerfile is simply a text-based script of instructions that is used to create a container image. If you’ve created Dockerfiles before, you might see a few flaws in the Dockerfile below. But, don’t worry. We’ll go over them.
-
-> Hellow
+In order to build the application, we need to use a Dockerfile. A Dockerfile is simply a text-based script of instructions that is used to create a container image. If you’ve created Dockerfiles before, you might see a few flaws in the Dockerfile below. But, don’t worry. We’ll go over them.
 
 1. Create a file named `Dockerfile` in the same folder as the file `package.json` with the following contents.
 
