@@ -4,6 +4,7 @@
 Welcome! We are excited that you want to learn Docker.
 
 This page contains step-by-step instructions on how to get started with Docker. In this tutorial, you’ll learn how to:
+
 * Build and run an image as a container
 * Share images using Docker Hub
 * Deploy Docker applications using multiple containers with a database
@@ -35,8 +36,8 @@ You'll notice a few flags being used. Here's some more info on them:
 - `-p 80:80` - map port 80 of the host to port 80 in the container
 - `docker/getting-started` - the image to use
 
-> You can combine single character flags to shorten the full command.
-> As an example, the command above could be written as:
+> You can combine single character flags to shorten the full command. 
+As an example, the command above could be written as:
 
 ```
 docker run -dp 80:80 docker/getting-started
@@ -70,10 +71,4 @@ by a **container image**. Since the image contains the container's filesystem, i
 needed to run an application - all dependencies, configuration, scripts, binaries, etc. The 
 image also contains other configuration for the container, such as environment variables,
 a default command to run, and other metadata.
-
-We'll dive deeper into images later on, covering topics such as layering, best practices, and more.
-
-> If you're familiar with `chroot`, think of a container as an extended version of `chroot`. The
-> filesystem is simply coming from the image. But, a container adds additional isolation not
-> available when simply using chroot.
 

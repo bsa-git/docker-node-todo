@@ -49,6 +49,8 @@ h1, h2, h3, h4, .md-footer-nav__inner, .md-header-nav__title, footer.md-footer {
     background-color: #f6f8fa;
     border: 1px solid #dadddd;
     border-radius: 6px;
+    font-size: 85%;
+    line-height: 1.45;
 }
 
 .rst-content code {
@@ -56,10 +58,16 @@ h1, h2, h3, h4, .md-footer-nav__inner, .md-header-nav__title, footer.md-footer {
     background-color: #f6f8fa;
     border: 1px solid #dadddd;
     border-radius: 3px;
+    font-size: 85%;
 }
 
-.hljs-string {
+/* .hljs-string {
     color: #27ae60;
+} */
+
+.rst-content blockquote {
+    padding: 0 1em;
+    border-left: .25em solid #d0d7de;
 }
 
 .md-header-nav__title {
