@@ -17,8 +17,7 @@ Before we can run the application, we need to get the application source code on
 our machine. For real projects, you will typically clone the repo. But, for this tutorial,
 we have created a ZIP file containing the application.
 
-1. [Download the ZIP](/assets/app.zip). Open the ZIP file and make sure you extract the
-    contents.
+1. Download the App contents from the [getting-started repository](https://github.com/docker/getting-started/tree/master). You can either pull the entire project or [download it as a zip](https://github.com/docker/getting-started/archive/refs/heads/master.zip) and extract the app folder out to get started with.
 
 2. Once extracted, use your favorite code editor to open the project. If you're in need of
     an editor, you can use [Visual Studio Code](https://code.visualstudio.com/). You should
@@ -50,12 +49,11 @@ Please check that the file `Dockerfile` has no file extension like `.txt`. Some 
 2.If you haven't already done so, open a terminal and go to the `app` directory with the `Dockerfile`. Now build the container image using the `docker build` command.
 
 ```bash
-docker build -t getting-started .
+docker build -t node-todo .
 ```
 This command used the Dockerfile to build a new container image. You might have noticed that a lot of "layers" were downloaded. This is because we instructed the builder that we wanted to start from the `node:12-alpine` image. But, since we didn't have that on our machine, that image needed to be downloaded.
 After the image was downloaded, we copied in our application and used `yarn` to install our application's dependencies. The `CMD` directive specifies the default command to run when starting a container from this image.
-Finally, the `-t` flag tags our image. Think of this simply as a human-readable name for the final image. Since we named the image `getting-started`, we can refer to that image when we run a container.
-The `.` at the end of the `docker build` command tells that Docker should look for the `Dockerfile` in the current directory.
+Finally, the `-t` flag tags our image. Think of this simply as a human-readable name for the final image. Since we named the image `node-todo`, we can refer to that image when we run a container. The `.` at the end of the `docker build` command tells that Docker should look for the `Dockerfile` in the current directory.
 
 ## Starting an App Container
 
@@ -65,10 +63,10 @@ command (remember that from earlier?).
 1.Start your container using the `docker run` command and specify the name of the image we just created:
 
 ```bash
-docker run -dp 3000:3000 getting-started
+docker run -dp 3000:3000 node-todo
 ```
 
-Remember the `-d` and `-p` flags? We're running the new container in "detached" mode (in the background) and creating a mapping between the host's port 3000 to the container's port 3000. Without the port mapping, we wouldn't be able to access the application.
+Remember the `-d` and `-p` flags? We're running the new container in "detached" mode (in the background) and creating a mapping between the host's port `3000` to the container's port `3000`. Without the port mapping, we wouldn't be able to access the application.
 
 2.After a few seconds, open your web browser to [http://localhost:3000](http://localhost:3000). You should see our app!
 
