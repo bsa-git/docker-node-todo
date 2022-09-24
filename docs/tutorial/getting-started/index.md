@@ -1,5 +1,5 @@
 
-## Orientation and setup
+# Orientation and setup
 
 Welcome! We are excited that you want to learn Docker.
 

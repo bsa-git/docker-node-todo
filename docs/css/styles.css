@@ -44,6 +44,10 @@ h1, h2, h3, h4, .md-footer-nav__inner, .md-header-nav__title, footer.md-footer {
     font-family: Geomanist;
 }
 
+.document a {
+    text-decoration: underline;
+}
+
 .rst-content pre code {
     color: #24292f;
     background-color: #f6f8fa;
@@ -60,10 +64,6 @@ h1, h2, h3, h4, .md-footer-nav__inner, .md-header-nav__title, footer.md-footer {
     border-radius: 3px;
     font-size: 85%;
 }
-
-/* .hljs-string {
-    color: #27ae60;
-} */
 
 .rst-content blockquote {
     padding: 0 1em;
