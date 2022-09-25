@@ -1,4 +1,11 @@
-# Commands: mkdocs new, mkdocs serve, mkdocs build, mkdocs gh-deploy, mkdocs --help
+# Commands for mkdocs: mkdocs new, mkdocs serve, mkdocs build, mkdocs gh-deploy, mkdocs --help
+# Commands for docker: 
+#   - docker build -t node-todo .         -> "Build the container image"
+#   - docker run -dp 3000:3000 node-todo  -> "Start the container"
+#   - docker login -u YOUR-USER-NAME      -> "Login to the Docker Hub (https://hub.docker.com). Play with Docker(https://labs.play-with-docker.com/)"
+#   - docker tag node-todo YOUR-USER-NAME/node-todo -> "Use the `docker tag` command to give the `node-todo` image a new name"
+#   - docker push YOUR-USER-NAME/node-todo  -> "Running the `push command`"
+
 site_name: Docker for node-todo
 site_url: https://example.com/
 

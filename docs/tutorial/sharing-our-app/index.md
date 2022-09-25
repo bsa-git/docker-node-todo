@@ -30,15 +30,15 @@ an example command that you will need to run to push to this repo.
 
 ## Pushing our Image
 
-1.In the command line, try running the `push command` you see on Docker Hub. Note that your command will be using your **namespace**, not **"docker"**.
+1.In the command line, try running the `push command` you see on Docker Hub. Note that your command will be using your **namespace** -> **YOUR-USER-NAME**.
 
 ```plaintext
-$ docker push docker/node-todo
-The push refers to repository [docker.io/docker/node-todo]
-An image does not exist locally with the tag: docker/node-todo
+$ docker push YOUR-USER-NAME/node-todo
+The push refers to repository [docker.io/YOUR-USER-NAME/node-todo]
+An image does not exist locally with the tag: YOUR-USER-NAME/node-todo
 ```
 
-Why did it fail? The push command was looking for an image named docker/node-todo, but didn't find one. If you run `docker image ls`, you won't see one either.
+Why did it fail? The push command was looking for an image named YOUR-USER-NAME/node-todo, but didn't find one. If you run `docker image ls`, you won't see one either.
 To fix this, we need to "tag" our existing image we've built to give it another name.
 
 2.Login to the Docker Hub using the command `docker login -u YOUR-USER-NAME`.
@@ -46,7 +46,7 @@ To fix this, we need to "tag" our existing image we've built to give it another 
 3.Use the `docker tag` command to give the `node-todo` image a new name. Be sure to swap out `YOUR-USER-NAME` with your Docker ID.
 
 ```bash
-docker tag getting-started YOUR-USER-NAME/node-todo
+docker tag node-todo YOUR-USER-NAME/node-todo
 ```
 
 4.Now try your push command again. If you're copying the value from Docker Hub, you can drop the `tagname` portion, as we didn't add a tag to the image name. If you don't specify a tag, Docker will use a tag called `latest`.
