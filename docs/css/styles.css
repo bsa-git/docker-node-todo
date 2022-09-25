@@ -15,7 +15,7 @@ article img.emojione {
 }
 
 .md-footer-nav {
-    background-color: rgba(0,0,0,.57);
+    background-color: rgba(0, 0, 0, .57);
 }
 
 
@@ -24,7 +24,7 @@ article img.emojione {
     background-color: #0d9cec !important;
 }
 
-@font-face{
+@font-face {
     font-family: "Geomanist";
     src: url("../fonts/hinted-Geomanist-Book.ttf")
 }
@@ -40,12 +40,34 @@ body {
     color: #577482;
 }
 
-h1, h2, h3, h4, .md-footer-nav__inner, .md-header-nav__title, footer.md-footer {
+h1,
+h2,
+h3,
+h4,
+.md-footer-nav__inner,
+.md-header-nav__title,
+footer.md-footer {
     font-family: Geomanist;
 }
 
+.document a:visited {
+    color: #0C77FF;
+}
+
 .document a {
+    color: #0C77FF;
     text-decoration: underline;
+    background-color: transparent;
+}
+
+footer a:visited {
+    color: #0C77FF;
+}
+
+footer a {
+    color: #0C77FF;
+    text-decoration: underline;
+    background-color: transparent;
 }
 
 .rst-content pre code {

@@ -73,10 +73,8 @@ Remember the `-d` and `-p` flags? We're running the new container in "detached" 
 <img alt="Empty Todo List" src="todo-list-empty.png" style="width:50%;">
 
 3.Go ahead and add an item or two and see that it works as you expect. You can mark items as complete and remove items. Your frontend is successfully storing items in the backend!   Pretty quick and easy, huh?
-
 At this point, you should have a running todo list manager with a few items, all built by you!
 Now, let's make a few changes and learn about managing our containers.
-
 If you take a quick look at the Docker Dashboard, you should see your two containers running now 
 (this tutorial and your freshly launched app container)!
 
@@ -86,6 +84,5 @@ If you take a quick look at the Docker Dashboard, you should see your two contai
 
 In this short section, we learned the very basics about building a container image and created a
 Dockerfile to do so. Once we built an image, we started the container and saw the running app!
-
 Next, we're going to make a modification to our app and learn how to update our running application
 with a new image. Along the way, we'll learn a few other useful commands.

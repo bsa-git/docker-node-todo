@@ -39,7 +39,7 @@ You'll notice a few flags being used. Here's some more info on them:
 > You can combine single character flags to shorten the full command. 
 As an example, the command above could be written as:
 
-```
+```cli
 docker run -dp 80:80 docker/getting-started
 ```
 
