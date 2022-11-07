@@ -6,7 +6,10 @@
   "scripts": {
     "prettify": "prettier -l --write \"**/*.js\"",
     "test": "jest",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "mkdocs-serve": "mkdocs serve",
+    "mkdocs-build": "mkdocs build",
+    "mkdocs-deploy": "mkdocs gh-deploy"
   },
   "dependencies": {
     "express": "^4.17.1",
